@@ -1,7 +1,7 @@
 # Valorant Cypher Camera Raspberry Pi
-Hello everyone to build your own Cypher camera you have to first follow these steps before running the code. For this projekt you will need a **raspberry pi** and a **RPI CAM 5MP** and thats it for the streaming server. 
+Hello everyone! To build your own Cypher camera, you first need to follow these steps before running the code. For this project, you will need a Raspberry Pi and an RPI CAM 5MP – and that's it for the streaming server.
 
-if your wondering how to connect and setup the camera to the pi i recommend to check out this: [raspberrypi.org](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/0) if you finish this you can continue with the installation. 
+If you're wondering how to connect and set up the camera to the Pi, i recommend checking out this guide: [raspberrypi.org](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/0). Once you finish this, you can continue with the installation.
 ```
 pip install picamera
 pip install paho-mqtt
@@ -25,4 +25,3 @@ to stop the streaming server just run this command:
 ```
 mosquitto_pub -h mqtt.eclipseprojects.io -t camera/control -m "stop"
 ```
-
